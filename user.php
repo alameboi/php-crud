@@ -35,11 +35,13 @@ $user = mysqli_fetch_array($query);
             <td>Last name</td>
             <td>Gender</td>
             <td>Birth date</td>
+            <td>Update</td>
         </tr>
         <tr>
         <?php 		
             echo "<td>".$user['id']."</td>";
             echo "<td>".$user['username']."</td>";
+            echo "<td>".$user['password']."</td>";
             echo "<td>".$user['first_name']."</td>";
             echo "<td>".$user['last_name']."</td>";
             echo "<td>".$user['gender']."</td>";
