@@ -109,11 +109,11 @@ $birth_date = $user['birth_date'];
 			<tr> 
 				<td>Gender</td>
 				<td>
-                    <input type="radio" name="gender" value="male" id="r1">
+                    <input type="radio" name="gender" value="male" <?php echo($gender=='male')?'checked':''?> id="r1">
                     <label for 'r1'>male</label>
-                    <input type="radio" name="gender" value="female" id="r2">
+                    <input type="radio" name="gender" value="female" <?php echo($gender=='female')?'checked':''?> id="r2">
                     <label for 'r2'>female</label>
-                    <input type="radio" name="gender" value="other" id="r3">
+                    <input type="radio" name="gender" value="other" <?php echo($gender=='other')?'checked':''?> id="r3">
                     <label for 'r3'>other</label>
                 </td>
 			</tr>
