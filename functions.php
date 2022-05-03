@@ -68,7 +68,7 @@ function invalidPassword($password) {
 
 //checks if the name is invalid
 function invalidName($first_name, $last_name) {
-    if (!preg_match("/^[A-Z][a-zA-Z]{1,20}$/", $first_name) || !preg_match("/^[A-Z][a-zA-Z]{1,20}$/", $last_name)) {
+    if (!preg_match("/^[A-Z][a-z]{1,19}$/", $first_name) || !preg_match("/^[A-Z][a-z]{1,19}$/", $last_name)) {
         return true;
     }
     return false;

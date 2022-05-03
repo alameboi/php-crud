@@ -14,7 +14,7 @@ if(!$_SESSION['loggedin']) {
 $rows_per_page = 5;
 $query = mysqli_query($conn, "SELECT * FROM Users"); 
 $rows_num = mysqli_num_rows($query);
-$pages_num = round($rows_num / $rows_per_page) + 1;
+$pages_num = ceil($rows_num / $rows_per_page);
 
 //Getting/setting current page number
 if (isset($_GET['p'])) {
